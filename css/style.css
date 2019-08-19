@@ -1,0 +1,47 @@
+body {
+	background: #efefef;
+}
+
+#frame {
+
+	position: relative;
+	border: solid 1px;
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	background-color: white;
+	justify-content: center;
+
+}
+
+
+.panel {
+
+	position: absolute;
+	border: solid 1px;
+	width: 48px;
+	height: 48px;
+	background-color: skyblue;
+	text-align: center;
+	line-height: 48px;
+	-webkit-user-select: none;
+
+}
+
+.point {
+	cursor: pointer;
+}
+
+.point:hover {
+	opacity: 0.9;
+}
+
+
+
+#panel9 {
+
+	background-color: orange;
+
+}
+
+
