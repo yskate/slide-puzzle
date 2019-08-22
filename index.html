@@ -7,10 +7,35 @@
 	<link rel="stylesheet" href="./css/style.css"></link>
 </head>
 <body>
-<h1>Slide Puzzle</h1>
-<div id="frame">
+<div id="content1" class="content fade1">
+	<p class="sentence">
+	よくあるスライドパズルです。<br/>
+	難易度を選択してください。<br/><br/>
+	</p>
+		<div class="level" data-level="2">
+		２×２(やさしい)
+		</div>
+		<div class="level" data-level="3">
+		３×３(普通)
+		</div>
+		<div class="level" data-level="4">
+		４×４(やや難しい)
+		</div>
 </div>
+
+<div id="content2" class="content">
+	<p class="sentence">
+	左から右、上から下へ大きくなるよう<br/>
+	数字を並べて替えてください。<br/><br/>
+	</p>
+	<div id="frame">
+	</div>
+</div>
+
+
 <script src="./js/main.js"></script>
+
+
 </body>
 
 </html>

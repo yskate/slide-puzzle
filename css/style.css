@@ -1,5 +1,36 @@
 body {
-	background: #efefef;
+	background: #ffffff;
+	margin-right: auto;
+	margin-left : auto;
+}
+
+
+.content {
+	border: solid 2px black ;
+	width: 400px;
+	height: 290px;
+	padding: 40px 20px;
+	text-align:center;
+}
+
+
+#content1 {
+	position: absolute;
+	z-index: 2;
+	top: 60px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+}
+
+#content2 {
+	position: absolute;
+	visibility: hidden;
+	z-index: 1;
+	top: 60px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
 }
 
 #frame {
@@ -10,8 +41,21 @@ body {
 	height: 150px;
 	margin: auto;
 	background-color: white;
-	justify-content: center;
+	dispay: block;
 
+}
+
+.level {
+
+	border: solid 2px gray ;
+	margin: 2px 2px;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+.level:hover {
+	background-color: #B2E8FF;
 }
 
 
@@ -38,10 +82,39 @@ body {
 
 
 
-#panel9 {
+.fade1{
 
-	background-color: orange;
-
+	animation-name:fade-in;
+	animation-duration:1.2s;
+	animation-timing-function: ease-out;
+	animation-iteration-count:1; 
+	animation-direction:normal; 
+	animation-fill-mode: forwards; 
 }
+
+
+@keyframes fade-in {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
+
+
+
+.fade2{
+
+	animation-name:fade-out;
+	animation-duration:1.2s;
+	animation-timing-function: ease-out;
+	animation-iteration-count:1; 
+	animation-direction:normal; 
+	animation-fill-mode: forwards; 
+}
+
+@keyframes fade-out {
+	0% {opacity: 1}
+	100% {opacity: 0}
+}
+
+
 
 
